@@ -1,0 +1,89 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to top, #f00552, #f55101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    gap: 15px;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form #date {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+form #calc_age {
+    padding: 8px 6px;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 4px #fff;
+    transition: .3s;
+}
+
+form #calc_age:active {
+    box-shadow: 0 0px 4px #fff;
+    transform: translateY(4px);
+}
+
+form #calc_age:hover {
+    background-color: #777;
+}
+
+.result {
+    text-align: center;
+    background-color: #fff;
+    color: red;
+    font-weight: 700;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+#age {
+    color: #222;
+}
+
+
+
+
+
+
+
